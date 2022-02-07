@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TicTacToe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tic Tac Toe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k2S-fL-LZH">
+                                <rect key="frame" x="64" y="50" width="286" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yet-qI-4Ht">
+                                <rect key="frame" x="0.0" y="108" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xtH-oT-G2J">
+                                <rect key="frame" x="138" y="108" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yXI-m9-kJw">
+                                <rect key="frame" x="260" y="108" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8yx-mo-v7h">
+                                <rect key="frame" x="0.0" y="227" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBP-fB-M6X">
+                                <rect key="frame" x="138" y="227" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mYZ-ee-5c1">
+                                <rect key="frame" x="260" y="227" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X5s-fR-sOq">
+                                <rect key="frame" x="0.0" y="327" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="boD-fJ-M5C">
+                                <rect key="frame" x="130" y="327" width="128" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nfs-YM-Vsl">
+                                <rect key="frame" x="260" y="327" width="130" height="130"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zLe-q9-30F" customClass="GridView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="-1" y="101" width="390" height="390"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fAe-uF-tcO" customClass="InfoView" customModule="TicTacToe" customModuleProvider="target">
+                                <rect key="frame" x="75" y="358" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LAl-a4-oYB">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BfP-E0-aQP">
+                                        <rect key="frame" x="0.0" y="66" width="240" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" systemColor="systemBlueColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="OK"/>
+                                        <connections>
+                                            <action selector="tapGoBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OQC-U0-W33"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="Info" destination="LAl-a4-oYB" id="cfO-sa-bwD"/>
+                                    <outlet property="OK" destination="BfP-E0-aQP" id="AJ5-7e-8by"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="X" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EHZ-J5-zq1">
+                                <rect key="frame" x="10" y="668" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="faU-so-1VY" appends="YES" id="uz2-kJ-hm7"/>
+                                </connections>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="O" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QbB-i4-B8V">
+                                <rect key="frame" x="260" y="668" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="gGF-cw-OUE" appends="YES" id="34h-oi-xF9"/>
+                                </connections>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjv-jK-o7E">
+                                <rect key="frame" x="173" y="713" width="45.333333333333336" height="30.666666666666668"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <gestureRecognizers/>
+                    </view>
+                    <connections>
+                        <outlet property="GridView" destination="zLe-q9-30F" id="684-17-37e"/>
+                        <outlet property="Info" destination="LAl-a4-oYB" id="H5z-b2-EkM"/>
+                        <outlet property="InfoButton" destination="pjv-jK-o7E" id="3IT-iu-BqN"/>
+                        <outlet property="InfoView" destination="fAe-uF-tcO" id="7LB-iT-iSN"/>
+                        <outlet property="O" destination="QbB-i4-B8V" id="0ZL-eg-LEK"/>
+                        <outlet property="OK" destination="BfP-E0-aQP" id="A8o-gT-CI5"/>
+                        <outlet property="Square0" destination="yet-qI-4Ht" id="3V4-qj-VLt"/>
+                        <outlet property="Square1" destination="xtH-oT-G2J" id="sbj-jR-N5e"/>
+                        <outlet property="Square2" destination="yXI-m9-kJw" id="akR-1e-dIS"/>
+                        <outlet property="Square3" destination="8yx-mo-v7h" id="mDC-8X-qyp"/>
+                        <outlet property="Square4" destination="VBP-fB-M6X" id="hJS-qN-Ok9"/>
+                        <outlet property="Square5" destination="mYZ-ee-5c1" id="SaA-VR-00I"/>
+                        <outlet property="Square6" destination="X5s-fR-sOq" id="GAX-Ni-7Co"/>
+                        <outlet property="Square7" destination="boD-fJ-M5C" id="DO0-Se-Eyb"/>
+                        <outlet property="Square8" destination="nfs-YM-Vsl" id="3P7-iP-7IS"/>
+                        <outlet property="X" destination="EHZ-J5-zq1" id="tcp-xV-Ufc"/>
+                        <outletCollection property="Squares" destination="yet-qI-4Ht" collectionClass="NSMutableArray" id="Tef-wv-TYt"/>
+                        <outletCollection property="Squares" destination="xtH-oT-G2J" collectionClass="NSMutableArray" id="fFZ-8O-18L"/>
+                        <outletCollection property="Squares" destination="yXI-m9-kJw" collectionClass="NSMutableArray" id="6Ae-1e-Cmk"/>
+                        <outletCollection property="Squares" destination="8yx-mo-v7h" collectionClass="NSMutableArray" id="lwG-vK-mry"/>
+                        <outletCollection property="Squares" destination="VBP-fB-M6X" collectionClass="NSMutableArray" id="1SG-I6-7fJ"/>
+                        <outletCollection property="Squares" destination="mYZ-ee-5c1" collectionClass="NSMutableArray" id="ZPG-dd-ikh"/>
+                        <outletCollection property="Squares" destination="X5s-fR-sOq" collectionClass="NSMutableArray" id="3Wm-b0-6m7"/>
+                        <outletCollection property="Squares" destination="boD-fJ-M5C" collectionClass="NSMutableArray" id="oX5-Sb-Awu"/>
+                        <outletCollection property="Squares" destination="nfs-YM-Vsl" collectionClass="NSMutableArray" id="1QX-Xl-NCI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="gGF-cw-OUE">
+                    <connections>
+                        <action selector="tapDragO:" destination="BYZ-38-t0r" id="YGj-ZD-16x"/>
+                        <outlet property="delegate" destination="QbB-i4-B8V" id="dh3-Cr-Uuz"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="faU-so-1VY">
+                    <connections>
+                        <action selector="tapDragX:" destination="BYZ-38-t0r" id="tqk-NF-eFn"/>
+                        <outlet property="delegate" destination="EHZ-J5-zq1" id="97e-Mc-6D7"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-266.15384615384613" y="137.91469194312796"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
