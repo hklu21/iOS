@@ -1,8 +1,8 @@
-# mpcs51030-2022-winter-final-project: GOMOKU Project
+# GOMOKU Project
 
-* Name:             Hengkuan Lu, Guanming Huang
-* UChicago Email:   hklu21@uchicago.edu, guahuang2@uchicago.edu
-* Slack Username:   Hengkuan Lu, Patrick Huang
+* Name:             Hengkuan Lu
+* UChicago Email:   hklu21@uchicago.edu
+* Slack Username:   Hengkuan Lu
 
 ## Introduction
 
